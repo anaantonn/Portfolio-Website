@@ -6,10 +6,25 @@
          url("../fonts/SpaceMono-BoldItalic.ttf");
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+
 body {
-    background-image: linear-gradient(90deg, rgba(121, 80, 242, 0.67) 1%, rgba(247, 131, 172, 0.67) 100%);
+    background-color: #f0f8ff;
     font-family: "Space Mono", monospace;
-    margin: 0;
 }
 
 header {
@@ -22,19 +37,21 @@ header {
 .header {
     font-size: 20px;
     position: relative;
+    z-index: 4;
 }
 
 .header nav {
-    color: #6f248d;
+    color: #8A2932;
     position: relative;
+    flex-wrap: wrap;
 
 }
 
 .header p {
-    color: #462155;
+    color: #8A2932;
     position: relative;
-    font-size: 20px;
-
+    flex-wrap: wrap;
+    margin-left: 20px;
 }
 
 .header nav ul li {
@@ -50,7 +67,7 @@ header {
 }
 
 .header nav ul li a:hover {
-    color: #462155;
+    color: #C67339;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -72,7 +89,7 @@ header {
 }
 
 .custom-shape-divider-top-1746567817 .shape-fill {
-    fill: #fde3e3;
+    fill: #EFC8CB;
 }
 
 main {
@@ -95,11 +112,21 @@ main {
     flex-wrap: wrap;
 }
 
+.intro h1 span {
+    color: #8A2932;
+}
+
+.new-indent {
+    display: block;
+    text-indent: 4ch;
+    color: none;
+}
+
 .intro p {
     max-width: 700px;
     height: auto;
     font-size: 20px;
-    text-align: left;
+    text-align: justify;
     margin-left: 100px;
     margin-bottom: 20px;
     line-height: 1.3;
@@ -110,8 +137,8 @@ main {
 
 }
 
-.buttons{
-    display: flex;
+.buttons {
+    display: grid;
     justify-content: space-between;
     position: relative;
     z-index: 3;
@@ -136,8 +163,8 @@ main {
 
 .btn {
     height: auto;
-    background-color: rgba(121, 80, 242, 0.4);
-    color: #462155;
+    background-color: #EBBCC0;
+    color: #B93743;
     font-family: inherit;
     font-size: 16px;
     font-weight: 700;
@@ -151,13 +178,12 @@ main {
 }
 
 .btn:hover {
-    background-color: #FFC5D3;
-    color: rgba(121, 80, 242, 0.67);
+    background-color: #e0959c;
+    color: #1E998E;
     transition: color 1s ease-in, background-color 1s ease-in;
 }
 
 .btn:active {
-    font-size: 18px;
     transition: font-size 1s ease-in-out;
     box-shadow: 0px 0px;
 }
@@ -168,11 +194,10 @@ main {
     right: 0;
     width: 40vw;
     height: auto;
-    overflow: hidden;
+    overflow: visible;
     z-index: 1;
     pointer-events: none;
 }
-
 .animation img {
     width: 100%;
     height: auto;
@@ -188,29 +213,9 @@ main {
     100% { transform: rotate(0deg); }
 }
 
-@media (max-width: 768px) {
-    .intro {
-        padding: 20px;
-    }
-
-    .intro p {
-        font-size: 16px;
-        max-width: 100%;
-        margin-left: 0;
-    }
-
-    .intro h1 {
-        font-size: 28px;
-        margin-left: 0;
-    }
-
-    .buttons nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 0;
-    }
-
-    .buttons nav ul li {
-        margin: 10px 0;
-    }
+footer {
+    font-size: 10px;
+    text-align: center;
+    margin-top: auto ;
+    color: rgba(184, 181, 181, 0.6);
 }
