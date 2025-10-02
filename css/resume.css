@@ -1,0 +1,48 @@
+.pdf {
+    aspect-ratio: 4 / 3;
+    width: 100%;
+    height: auto;
+    max-width: 90vw;
+    max-height: 80vh;
+    overflow: auto;
+    border: 10px solid #EFC8CB;
+}
+
+.pdf-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    z-index: 4;
+}
+
+.custom-shape-divider-top-1746567817 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+}
+
+.custom-shape-divider-top-1746567817 svg {
+    position: relative;
+    display: block;
+    width: calc(124% + 1.3px);
+    height: 151px;
+    z-index: 2;
+}
+
+.custom-shape-divider-top-1746567817 .shape-fill {
+    fill: #EFC8CB;
+}
+
+h1 {
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+    color: #8A2932;
+    z-index: 3;
+}
