@@ -1,6 +1,6 @@
 :root {
-  --primary: #EFC8CB;
-  --secondary: #FE4880;
+  --primary: #FFDBE9;
+  --secondary: #FFB6C1;
   --dark: #212121;
   --light: #f3f3f3;
 }
@@ -164,7 +164,6 @@ header {
     transform: rotateY(180deg);
 }
 
-
 .card__face {
     position: absolute;
     width: 100%;
@@ -239,6 +238,30 @@ header {
     color: var(--dark);
     font-size: 15px;
     line-height: 1.4;
+}
+
+.github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    text-align: center;
+}
+
+.github h3 {
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #cfc7c8;
+}
+
+.github a {
+    text-decoration: none;
+}
+
+.github :hover {
+    color: #1E998E;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 footer {
