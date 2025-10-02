@@ -399,6 +399,7 @@ header {
     width: fit-content;
     flex: 1;
     margin-bottom: 0;
+    padding-right: 0;
 }
 
 .education-grid h2 {
@@ -455,7 +456,6 @@ header {
     margin-top: 0;
     margin-bottom: 0;
     width: 100%;
-    padding: 20px;
 }
 
 .socials h3 {
